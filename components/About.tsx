@@ -27,7 +27,6 @@ export function About({ classname }: { classname?: string }) {
                 x: 0,
                 transition: { delay: 0.2, duration: 0.5 },
               }}
-              style={{ y: imgScroll }}
               className="z-[2] relative bg-cover bg-center">
               <Image
                 src={aboutContent.image.hero.src}
@@ -45,8 +44,7 @@ export function About({ classname }: { classname?: string }) {
                 x: 0,
                 transition: { delay: 0.4, duration: 0.5 },
               }}
-              viewport={{ once: true }}
-              style={{ y: imgScroll2 }}>
+              viewport={{ once: true }}>
               <Image
                 src={aboutContent.image.dots.src}
                 alt={aboutContent.image.dots.alt}

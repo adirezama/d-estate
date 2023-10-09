@@ -9,13 +9,6 @@ import { heroContent } from "@utils";
 export function Hero({ classname }: { classname?: string }) {
   const ref = useRef(null);
 
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start end", "end start"],
-  });
-
-  const imgScroll = useTransform(scrollYProgress, [0, 1], ["20%", "-20%"]);
-  const imgScroll2 = useTransform(scrollYProgress, [0, 1], ["100%", "50%"]);
   return (
     <section className={classname} ref={ref}>
       <div className="container mx-auto px-5 md:px-10">
@@ -56,7 +49,6 @@ export function Hero({ classname }: { classname?: string }) {
                 x: 0,
                 transition: { delay: 0.4, duration: 0.5 },
               }}
-              style={{ y: imgScroll }}
               className="z-[2] relative bg-cover bg-center">
               <Image
                 src={`/hero1.png`}
@@ -74,8 +66,7 @@ export function Hero({ classname }: { classname?: string }) {
                 x: 0,
                 transition: { delay: 0.4, duration: 0.5 },
               }}
-              viewport={{ once: true }}
-              style={{ y: imgScroll2 }}>
+              viewport={{ once: true }}>
               <Image
                 src="/dots-black.svg"
                 alt="Dots background image"
