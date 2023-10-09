@@ -53,7 +53,7 @@ export function About({ classname }: { classname?: string }) {
                 width={0}
                 height={0}
                 sizes="33vw"
-                className="absolute bottom-0 -right-10 w-64"
+                className="absolute bottom-0 -right-10 w-64 md:block hidden"
               />
             </motion.div>
           </div>
