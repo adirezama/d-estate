@@ -18,7 +18,7 @@ export function About({ classname }: { classname?: string }) {
   return (
     <section className={classname} ref={ref}>
       <div className="container mx-auto px-5 md:px-10">
-        <div className="flex flex-col md:flex-row items-center justify-between w-full lg:w-10/12 mx-auto gap-5">
+        <div className="flex flex-col md:flex-row items-center justify-between w-full lg:w-10/12 mx-auto">
           {/* Image */}
           <div className="lg:w-7/12 md:w-9/12 relative md:order-1 order-2 inline-block">
             <motion.div
@@ -52,7 +52,7 @@ export function About({ classname }: { classname?: string }) {
                 width={0}
                 height={0}
                 sizes="33vw"
-                className="absolute bottom-0 -right-10 w-64 md:block hidden"
+                className="absolute bottom-0 -right-10 w-64 md:inline-block hidden"
               />
             </motion.div>
           </div>
@@ -66,7 +66,7 @@ export function About({ classname }: { classname?: string }) {
                 x: 0,
                 transition: { delay: 0.2, duration: 0.5 },
               }}
-              className="font-semibold text-primary lg:text-4xl md:text-[2rem] text-[1.75rem] md:w-[25rem] lg:w-[31rem]">
+              className="font-semibold text-primary lg:text-4xl text-3xl  md:w-[25rem] lg:w-[31rem]">
               {aboutContent.title}
             </motion.h2>
             {/* Image */}
@@ -104,11 +104,7 @@ export function About({ classname }: { classname?: string }) {
                 x: 0,
                 transition: { delay: 0.6, duration: 0.5 },
               }}>
-              <Button
-                classname="py-3 md:px-8 px-4 md:text-base text-sm bg-primary text-white uppercase font-semibold hover:scale-95 transition-transform duration-300 ease-in-out"
-                label="Learn About Us"
-                href="/about"
-              />
+              <Button classname="button" label="Learn About Us" href="/about" />
             </motion.div>
           </div>
         </div>

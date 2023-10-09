@@ -23,7 +23,7 @@ export function Hero({ classname }: { classname?: string }) {
                   y: 0,
                   transition: { delay: 0.1, duration: 0.3 },
                 }}
-                className="md:w-[34rem] lg:w-[48rem] lg:text-7xl md:text-5xl text-[1.75rem] md:inline-block font-semibold font-manrope text-primary">
+                className="md:w-[34rem] lg:w-[48rem] lg:text-7xl text-5xl  md:inline-block font-semibold font-manrope text-primary">
                 {heroContent.intro.title}
               </motion.h1>
             )}
@@ -41,7 +41,7 @@ export function Hero({ classname }: { classname?: string }) {
             )}
           </div>
           {/* Image */}
-          <div className="md:w-4/12 md:py-20">
+          <div className="md:w-4/12 md:py-20 relative">
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               whileInView={{
