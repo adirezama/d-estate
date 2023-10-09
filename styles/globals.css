@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  html {
+    margin-top: 50px;
+  }
+}
+
+/* Base link style */
+.navMenu li {
+  list-style: none;
+}
+
+.navMenu a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  padding-bottom: 5px;
+  color: inherit;
+  letter-spacing: 0em;
+  transition: all 300ms ease-in-out;
+}
+
+/* Underline animation styles */
+.navMenu a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #3498db; /* You can change this color to match your desired color */
+  transform-origin: 50% 0%;
+  transform: scaleX(0);
+  transition: all 300ms ease-in-out;
+}
+
+.navMenu a:hover::before {
+  transform-origin: 100% 0%;
+  transform: scaleX(1);
+}
