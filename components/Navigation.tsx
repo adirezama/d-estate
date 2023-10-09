@@ -35,7 +35,7 @@ export function Navigation({}) {
     <>
       <header
         role="banner"
-        className="fixed top-0 py-3 md:py-5 w-full z-[5] border-b px-5 md:px-20 bg-background">
+        className="fixed top-0 py-3 md:py-5 w-full z-[5] border-b px-5 md:px-10 bg-background">
         <div className="flex items-center justify-between  mx-auto">
           <Link href={"/"}>
             <span className="text-2xl text-primary leading-none font-bold font-aleo tracking-[2px]">
