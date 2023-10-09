@@ -20,7 +20,7 @@ export function Services({ classname }: { classname?: string }) {
                   whileInView={{
                     opacity: 1,
                     x: 0,
-                    transition: { delay: 0.2 * index, duration: 0.5 },
+                    transition: { delay: 0.1 * index, duration: 0.5 },
                   }}
                   className="text-3xl font-semibold font-manrope text-primary">
                   {offer.title}
