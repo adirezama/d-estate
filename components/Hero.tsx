@@ -56,7 +56,7 @@ export function Hero({ classname }: { classname?: string }) {
                 width={0}
                 height={0}
                 sizes="50vw"
-                className="md:w-[20rem] md:h-fit w-[25rem] h-full"
+                className="lg:w-[29rem] lg:h-[30rem] md:w-[20rem] md:h-[21rem] w-[28rem] h-[19rem]"
               />
             </motion.div>
             <motion.div
