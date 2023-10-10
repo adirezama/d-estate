@@ -12,9 +12,9 @@ export function Hero({ classname }: { classname?: string }) {
   return (
     <section className={classname} ref={ref}>
       <div className="container mx-auto px-5 md:px-10">
-        <div className="flex flex-col md:flex-row items-center justify-between w-full lg:w-10/12 mx-auto md:min-h-[500px] lg:h-screen lg:min-h-[600px]">
+        <div className="flex flex-col md:flex-row items-center md:justify-between gap-10 w-full lg:w-10/12 mx-auto md:min-h-[500px] lg:min-h-[600px]">
           {/* Content */}
-          <div className="md:w-4/12 z-[3] space-y-6 mb-5">
+          <div className="md:w-4/12 z-[3] space-y-6">
             {heroContent.intro.title && (
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
@@ -23,7 +23,7 @@ export function Hero({ classname }: { classname?: string }) {
                   y: 0,
                   transition: { delay: 0.1, duration: 0.3 },
                 }}
-                className="md:w-[34rem] lg:w-[48rem] lg:text-7xl text-5xl  md:inline-block font-semibold font-manrope text-primary">
+                className="prevent-select md:w-[34rem] lg:w-[48rem] lg:text-7xl text-4xl md:inline-block font-semibold font-manrope text-primary">
                 {heroContent.intro.title}
               </motion.h1>
             )}
@@ -56,7 +56,7 @@ export function Hero({ classname }: { classname?: string }) {
                 width={0}
                 height={0}
                 sizes="50vw"
-                className="lg:w-[29rem] lg:h-[30rem] md:w-[20rem] md:h-[21rem] w-[28rem] h-[19rem]"
+                className="shadow-2xl lg:w-[29rem] lg:h-[30rem] md:w-[20rem] md:h-[21rem] w-[28rem] h-[19rem]"
               />
             </motion.div>
             <motion.div

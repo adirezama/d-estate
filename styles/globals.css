@@ -21,6 +21,12 @@
   @apply py-3 md:px-6 px-3 md:text-base text-sm leading-none bg-primary text-white tracking-[2px] uppercase font-semibold hover:scale-95 transition-transform duration-300 ease-in-out;
 }
 
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
 /* Base link style */
 .navMenu li {
   list-style: none;

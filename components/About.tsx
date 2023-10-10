@@ -1,26 +1,17 @@
 "use client";
 import { aboutContent } from "@utils";
 import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import { useRef } from "react";
 import { Button } from "./Button";
 
 export function About({ classname }: { classname?: string }) {
-  const ref = useRef(null);
-
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start end", "end start"],
-  });
-
-  const imgScroll = useTransform(scrollYProgress, [0, 1], ["20%", "-20%"]);
-  const imgScroll2 = useTransform(scrollYProgress, [0, 1], ["100%", "50%"]);
   return (
-    <section className={classname} ref={ref}>
+    <section className={classname}>
       <div className="container mx-auto px-5 md:px-10">
-        <div className="flex flex-col md:flex-row items-center justify-between w-full lg:w-10/12 mx-auto">
+        <div className="flex flex-col md:flex-row items-center justify-center md:justify-between w-full lg:w-10/12 mx-auto gap-0 md:gap-3">
           {/* Image */}
-          <div className="lg:w-7/12 md:w-9/12 relative md:order-1 order-2 inline-block">
+          <div className="lg:w-7/12 md:w-9/12 relative md:order-1 order-2">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{
@@ -52,13 +43,13 @@ export function About({ classname }: { classname?: string }) {
                 width={0}
                 height={0}
                 sizes="33vw"
-                className="absolute bottom-0 -right-10 w-64 md:inline-block hidden"
+                className="absolute bottom-0 -right-10 w-64 md:block hidden"
               />
             </motion.div>
           </div>
 
           {/* Content */}
-          <div className="z-[3] space-y-6 md:order-2 order-1">
+          <div className="z-[3] md:order-2 order-1 space-y-5">
             <motion.h2
               initial={{ opacity: 0, x: 20 }}
               whileInView={{
@@ -66,7 +57,7 @@ export function About({ classname }: { classname?: string }) {
                 x: 0,
                 transition: { delay: 0.2, duration: 0.5 },
               }}
-              className="font-semibold text-primary lg:text-4xl text-3xl  md:w-[25rem] lg:w-[31rem]">
+              className="prevent-select font-semibold text-primary lg:text-4xl text-3xl md:w-[25rem] lg:w-[31rem]">
               {aboutContent.title}
             </motion.h2>
             {/* Image */}

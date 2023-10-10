@@ -13,7 +13,6 @@ export function Navigation({}) {
     "fixed  transition-all duration-700 ease-in-out opacity-100";
 
   const pathName = usePathname();
-  const router = useRouter();
   const currentPath = (href: string) => {
     if (pathName === href) {
       return "text-blue-400";
@@ -38,7 +37,7 @@ export function Navigation({}) {
         className="fixed top-0 py-3 md:py-5 w-full z-[5] border-b px-5 md:px-10 bg-background">
         <div className="flex items-center justify-between  mx-auto">
           <Link href={"/"}>
-            <span className="text-2xl text-primary leading-none font-bold font-aleo tracking-[2px]">
+            <span className="prevent-select text-2xl text-primary leading-none font-bold font-aleo tracking-[2px]">
               D&rsquo;estate.
             </span>
           </Link>
@@ -48,7 +47,7 @@ export function Navigation({}) {
                 <li key={menu.href}>
                   <Link
                     href={menu.href}
-                    className={`relative before:content-[' '] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[2px] before:bg-blue-400 before:origin-[100%,50%] before:transition-all before:duration-300 before:ease-in-out before:scale-x-0 hover:before:origin-[100%, 0%] hover:before:scale-x-[1] text-sm tracking-[2px] uppercase font-nunito font-medium pb-2 ${currentPath(
+                    className={`prevent-select relative before:content-[' '] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[2px] before:bg-blue-400 before:origin-[100%,50%] before:transition-all before:duration-300 before:ease-in-out before:scale-x-0 hover:before:origin-[100%, 0%] hover:before:scale-x-[1] text-sm tracking-[2px] uppercase font-nunito font-medium pb-2 ${currentPath(
                       menu.href
                     )}`}>
                     {menu.label}
@@ -59,7 +58,7 @@ export function Navigation({}) {
           </div>
           {/* Nav menu Icon */}
           <div
-            className=" md:hidden cursor-pointer text-lg leading-none font-manrope font-semibold flex items-center justify-center w-10 h-10 bg-white border border-gray-500 hover:bg-gray-50 hover:shadow-lg rounded-full z-[6]"
+            className="prevent-select md:hidden cursor-pointer text-lg leading-none font-manrope font-semibold flex items-center justify-center w-10 h-10 bg-white border border-gray-500 hover:bg-gray-50 hover:shadow-lg rounded-full z-[6]"
             onClick={() => setActive((prev) => !prev)}>
             {active ? (
               <XMarkIcon className="w-5 h-5" />
@@ -77,7 +76,7 @@ export function Navigation({}) {
         )}
         {/* Mobile Menu */}
         <div
-          className={`md:hidden fixed top-0 right-0 z-[4] h-full w-[55%] py-32 flex backdrop-blur bg-background ${
+          className={`prevent-select md:hidden fixed top-0 right-0 z-[4] h-full w-[55%] py-32 flex backdrop-blur bg-background ${
             active ? sideNavActive : sideNav
           }`}>
           <ul className="flex flex-col gap-5 relative text-gray-800 w-full text-lg leading-none font-manrope font-semibold uppercase">

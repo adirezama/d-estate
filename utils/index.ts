@@ -1,3 +1,12 @@
+import { HowItWorks } from "@components/HowItWorks";
+import {
+  BiHardHat,
+  BiPaintRoll,
+  BiNote,
+  BiBulb,
+  BiLayer,
+  BiOutline,
+} from "react-icons/bi";
 export const navMenu = [
   { href: "/", label: "Home" },
   { href: "/projects", label: "Projects" },
@@ -62,4 +71,90 @@ export const servicesContent = {
       { src: "/hero2.png", alt: "Hero image" },
     ],
   },
+};
+
+export const howItWorksContent = {
+  heading: {
+    title: "Where Creativity Meets Structural Integrity",
+    subTitle: "How It Works",
+    description:
+      "We are a team of professionals who are dedicated to providing you with the best services possible. ",
+  },
+  steps: [
+    {
+      number: "01",
+      icon: BiHardHat,
+      title: "Project Initiation",
+      description:
+        "We will meet with you to discuss your project and provide a free estimate.",
+      btn: {
+        href: "#",
+        label: "Learn More",
+      },
+    },
+    {
+      number: "02",
+      icon: BiPaintRoll,
+      title: "Conceptual Design",
+      description:
+        "We will work with you to create a design that meets your needs and budget.",
+      btn: {
+        href: "#",
+        label: "Learn More",
+      },
+    },
+    {
+      number: "03",
+      icon: BiNote,
+      title: "Construction Documents",
+      description:
+        "We will provide you with a detailed set of construction documents for your project.",
+      btn: {
+        href: "#",
+        label: "Learn More",
+      },
+    },
+  ],
+  features: [
+    {
+      icon: BiHardHat,
+      title: "Design & Build",
+      description:
+        "We will meet with you to discuss your project and provide a free estimate.",
+      btn: {
+        href: "#",
+        label: "Learn More",
+      },
+    },
+    {
+      icon: BiBulb,
+      title: "Construction Management",
+      description:
+        "We will work with you to create a design that meets your needs and budget.",
+      btn: {
+        href: "#",
+        label: "Learn More",
+      },
+    },
+    {
+      icon: BiOutline,
+      title: "Post-Construction Services",
+      description:
+        "Covert your dream home into reality with our post construction services.",
+      btn: {
+        href: "#",
+        label: "Learn More",
+      },
+    },
+    {
+      icon: BiLayer,
+      title: "Interior Design",
+      description:
+        "Covert your dream home into reality with our post construction services.",
+      btn: {
+        href: "#",
+        label: "Learn More",
+      },
+    },
+  ],
 };
