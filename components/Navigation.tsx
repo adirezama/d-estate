@@ -61,9 +61,9 @@ export function Navigation({}) {
             className="prevent-select md:hidden cursor-pointer text-lg leading-none font-manrope font-semibold flex items-center justify-center w-10 h-10 bg-white border border-gray-500 hover:bg-gray-50 hover:shadow-lg rounded-full z-[6]"
             onClick={() => setActive((prev) => !prev)}>
             {active ? (
-              <XMarkIcon className="w-5 h-5" />
+              <XMarkIcon className="prevent-select w-5 h-5" />
             ) : (
-              <Bars4Icon className="w-5 h-5" />
+              <Bars4Icon className="prevent-select w-5 h-5" />
             )}
           </div>
         </div>
