@@ -8,9 +8,9 @@ import { useEffect, useState } from "react";
 export function Navigation({}) {
   const [active, setActive] = useState(false);
   const sideNav =
-    "fixed translate-x-[100%] transition-all duration-700 ease-in-out opacity-0";
+    "translate-x-[60%] transition-all duration-700 ease-in-out opacity-0";
   const sideNavActive =
-    "fixed  transition-all duration-700 ease-in-out opacity-100";
+    "translate-x[0%] transition-all duration-700 ease-in-out opacity-100";
 
   const pathName = usePathname();
   const currentPath = (href: string) => {
