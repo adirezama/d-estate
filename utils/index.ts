@@ -158,3 +158,84 @@ export const howItWorksContent = {
     },
   ],
 };
+
+export const testimonialsContent = {
+  heading: {
+    title: "What Our Customers Say",
+    subTitle: "Testimonials",
+    description:
+      "We are a team of professionals who are dedicated to providing you with the best services possible. ",
+  },
+  testimonials: [
+    {
+      name: "John Smith",
+      title: "Homeowner",
+      role: "Customer",
+      quote:
+        "Working with D-Estate was an amazing experience. They turned our dream home into a reality. Their attention to detail is exceptional.",
+    },
+    {
+      name: "Alice Johnson",
+      title: "Real Estate Agent",
+      role: "Customer",
+      quote:
+        "I've recommended D-Estate to numerous clients, and they have never disappointed. Their homes are of the highest quality.",
+    },
+    {
+      name: "Robert Davis",
+      title: "Architect",
+      role: "Customer",
+      quote:
+        "D-Estate's collaboration with architects is seamless. Their commitment to architectural vision is impressive.",
+    },
+    {
+      name: "Sara White",
+      title: "Interior Designer",
+      role: "Customer",
+      quote:
+        "I've had the privilege of working on D-Estate projects, and their commitment to design excellence is truly remarkable.",
+    },
+    {
+      name: "Michael Brown",
+      title: "Homeowner",
+      role: "Customer",
+      quote:
+        "D-Estate's designs are a perfect blend of aesthetics and functionality. We love our D-Estate-built home.",
+    },
+    {
+      name: "Emily Clark",
+      title: "Construction Manager",
+      role: "Customer",
+      quote:
+        "I've managed construction projects with D-Estate, and their professionalism and quality are unparalleled.",
+    },
+    {
+      name: "David Hall",
+      title: "Homeowner",
+      role: "Customer",
+      quote:
+        "D-Estate not only built our home but also made the process stress-free and enjoyable. We are extremely satisfied.",
+    },
+    {
+      name: "Jennifer Lee",
+      title: "Homebuyer",
+      role: "Customer",
+      quote:
+        "D-Estate's homes stand out in the market. Their attention to customer preferences makes them a top choice.",
+    },
+    {
+      name: "William Smithson",
+      title: "Investor",
+      role: "Customer",
+      quote:
+        "Investing in D-Estate properties has been a wise decision. Their homes have consistently shown value appreciation.",
+    },
+    {
+      name: "Sophia Martinez",
+      title: "Homeowner",
+      role: "Customer",
+      quote:
+        "D-Estate's homes are not just structures; they are expressions of art. We are proud to call their work our home.",
+    },
+  ],
+};

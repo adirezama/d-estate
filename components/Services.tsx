@@ -69,7 +69,7 @@ export function Services({ classname }: { classname?: string }) {
               }}>
               <Button classname="button" label="Talk To Us" href="/contact" />
             </motion.div>
-            <div className="flex relative md:h-[25rem]">
+            <div className="flex gap-5 relative ">
               {servicesContent.headline.images.map((img) => (
                 <motion.div
                   key={img.src}
@@ -77,16 +77,16 @@ export function Services({ classname }: { classname?: string }) {
                   whileInView={{
                     opacity: 1,
                     x: 0,
-                    transition: { delay: 0.8, duration: 0.5 },
+                    transition: { delay: 0.3, duration: 0.3 },
                   }}
-                  className="flex justify-center basis-1/2 lg:absolute lg:first:top-0 lg:first:left-0 lg:last:-top-6 lg:last:right-0">
+                  className="z-[2] relative bg-cover bg-center">
                   <Image
                     src={img.src}
-                    alt={img.alt}
+                    alt="hero image"
                     width={0}
                     height={0}
-                    sizes="50vw"
-                    className="md:w-[16rem] md:h-[20rem] w-[12rem] h-[15rem]"
+                    sizes="(min-width:1024px) 75vw ,(min-width-width:768px) 50vw, 33vw"
+                    className="object-cover shadow-2xl md:w-[20rem] md:h-[21rem] w-[28rem] h-[19rem]"
                   />
                 </motion.div>
               ))}

@@ -5,7 +5,7 @@ import { Aleo, Manrope, Nunito } from "next/font/google";
 
 const aleo = Aleo({
   subsets: ["latin-ext"],
-  display: "auto",
+  display: "swap",
   variable: "--font-aleo",
 });
 const manrope = Manrope({
@@ -16,6 +16,7 @@ const manrope = Manrope({
 
 const nunito = Nunito({
   subsets: ["cyrillic"],
+  display: "swap",
   variable: "--font-raleway",
 });
 export const metadata: Metadata = {

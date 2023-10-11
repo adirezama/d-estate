@@ -8,14 +8,14 @@ import { useEffect, useState } from "react";
 export function Navigation({}) {
   const [active, setActive] = useState(false);
   const sideNav =
-    "translate-x-[60%] transition-all duration-700 ease-in-out opacity-0";
+    "md:hidden fixed top-0 right-0 z-[4] h-full w-[55%] py-32 flex backdrop-blur bg-background translate-x-[60%] transition-all duration-700 ease-in-out opacity-0";
   const sideNavActive =
-    "translate-x[0%] transition-all duration-700 ease-in-out opacity-100";
+    "md:hidden fixed top-0 right-0 z-[4] h-full w-[55%] py-32 flex backdrop-blur bg-background translate-x[0%] transition-all duration-700 ease-in-out opacity-100";
 
   const pathName = usePathname();
   const currentPath = (href: string) => {
     if (pathName === href) {
-      return "text-blue-400";
+      return "text-[#1B55AF]";
     } else {
       return "";
     }
@@ -75,10 +75,8 @@ export function Navigation({}) {
           />
         )}
         {/* Mobile Menu */}
-        <div
-          className={`prevent-select md:hidden fixed top-0 right-0 z-[4] h-full w-[55%] py-32 flex backdrop-blur bg-background ${
-            active ? sideNavActive : sideNav
-          }`}>
+
+        <div className={`prevent-select  ${active ? sideNavActive : sideNav}`}>
           <ul className="flex flex-col gap-5 relative text-gray-800 w-full text-lg leading-none font-manrope font-semibold uppercase">
             {navMenu.map((menu) => (
               <li key={menu.href} className="cursor-pointer">
