@@ -17,6 +17,9 @@ const config: Config = {
         primary: "#292A2E",
         background: "#F4F9FC",
       },
+      boxShadow: {
+        buton: "0px 6px 0px 0px #000",
+      },
     },
   },
   plugins: [],

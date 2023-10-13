@@ -19,6 +19,7 @@ export function About({ classname }: { classname?: string }) {
                   x: 0,
                   transition: { delay: 0.2, duration: 0.5 },
                 }}
+                viewport={{ once: true }}
                 className="z-[2] relative bg-cover bg-center md:block hidden">
                 <Image
                   src={aboutContent.image.hero.src}
@@ -30,10 +31,10 @@ export function About({ classname }: { classname?: string }) {
                 />
               </m.div>
               <m.div
-                initial={{ opacity: 0, x: 20 }}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{
                   opacity: 1,
-                  x: 0,
+                  y: 0,
                   transition: { delay: 0.4, duration: 0.5 },
                 }}
                 viewport={{ once: true }}>

@@ -1,15 +1,22 @@
 import Link from "next/link";
+import React, { Ref } from "react";
 
 type ButtonProps = {
   classname: string;
   label: string;
-  href: string;
+  href?: string;
 };
 
-export function Button({ classname, label, href }: ButtonProps) {
-  return (
-    <button className={classname}>
-      <Link href={href}>{label}</Link>
-    </button>
-  );
-}
+export const Button = React.forwardRef(
+  ({ classname, label, href }: ButtonProps, ref: Ref<HTMLButtonElement>) => {
+    return (
+      <a href={href}>
+        <button ref={ref} className={classname}>
+          {label}
+        </button>
+      </a>
+    );
+  }
+);
+
+Button.displayName = "Button";

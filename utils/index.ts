@@ -1,4 +1,4 @@
-import { HowItWorks } from "@components/HowItWorks";
+import { HowItWorks } from "@components/Home/HowItWorks";
 import {
   BiHardHat,
   BiPaintRoll,
@@ -168,7 +168,8 @@ export const testimonialsContent = {
   },
   testimonials: [
     {
-      name: "John Smith",
+      name: "Fadhilah Mark",
+      img: "/testi.jpg",
       title: "Homeowner",
       role: "Customer",
       quote:
@@ -176,6 +177,7 @@ export const testimonialsContent = {
     },
     {
       name: "Alice Johnson",
+      img: "/testi-2.jpg",
       title: "Real Estate Agent",
       role: "Customer",
       quote:
@@ -183,6 +185,7 @@ export const testimonialsContent = {
     },
     {
       name: "Robert Davis",
+      img: "/testi-3.jpg",
       title: "Architect",
       role: "Customer",
       quote:
@@ -190,6 +193,7 @@ export const testimonialsContent = {
     },
     {
       name: "Sara White",
+      img: "/testi-4.jpg",
       title: "Interior Designer",
       role: "Customer",
       quote:
@@ -197,6 +201,7 @@ export const testimonialsContent = {
     },
     {
       name: "Michael Brown",
+      img: "/testi-5.jpg",
       title: "Homeowner",
       role: "Customer",
       quote:
@@ -204,6 +209,7 @@ export const testimonialsContent = {
     },
     {
       name: "Emily Clark",
+      img: "/testi-6.jpg",
       title: "Construction Manager",
       role: "Customer",
       quote:
@@ -211,6 +217,7 @@ export const testimonialsContent = {
     },
     {
       name: "David Hall",
+      img: "/testi-7.jpg",
       title: "Homeowner",
       role: "Customer",
       quote:
@@ -218,6 +225,7 @@ export const testimonialsContent = {
     },
     {
       name: "Jennifer Lee",
+      img: "/testi-8.jpg",
       title: "Homebuyer",
       role: "Customer",
       quote:
@@ -225,6 +233,7 @@ export const testimonialsContent = {
     },
     {
       name: "William Smithson",
+      img: "/testi-9.jpg",
       title: "Investor",
       role: "Customer",
       quote:
@@ -232,10 +241,67 @@ export const testimonialsContent = {
     },
     {
       name: "Sophia Martinez",
+      img: "/testi-10.jpg",
       title: "Homeowner",
       role: "Customer",
       quote:
         "D-Estate's homes are not just structures; they are expressions of art. We are proud to call their work our home.",
+    },
+  ],
+};
+
+export const recentBlogContent = {
+  title: "Recent Updates",
+  description:
+    "Explore the latest insights and innovations in architectural design and construction. Discover how the built environment is evolving, and gain valuable knowledge to inspire your next architectural project.",
+  subTitle: "Our blog ",
+};
+
+export const subscribeContent = {
+  heading: {
+    title: "Never Miss an Update, Subscribe Today",
+    subTitle: "Join our Community",
+    description:
+      "Join our community of subscribers today and stay connected with all exciting developments!",
+  },
+  form: {
+    placeholder: "Enter your Email",
+  },
+};
+
+export const footerContent = {
+  footerLinks: [
+    {
+      heading: "Product",
+      links: [
+        { href: "#", label: "Overview" },
+        { href: "#", label: "Solution", badge: "New" },
+        { href: "#", label: "Tutorials" },
+        { href: "#", label: "Pricing" },
+        { href: "#", label: "Releases" },
+      ],
+    },
+    {
+      heading: "Company",
+      links: [
+        { href: "#", label: "About Us" },
+        { href: "#", label: "Leadership" },
+        { href: "#", label: "Careers", badge: "We're hiring" },
+        { href: "#", label: "Press" },
+        { href: "#", label: "Contact" },
+        { href: "#", label: "Branding" },
+      ],
+    },
+    {
+      heading: "Resources",
+      links: [
+        { href: "#", label: "Blog" },
+        { href: "#", label: "Events" },
+        { href: "#", label: "Newsletter" },
+        { href: "#", label: "Knowledge base" },
+        { href: "#", label: "Support" },
+        { href: "#", label: "Tutorials" },
+      ],
     },
   ],
 };

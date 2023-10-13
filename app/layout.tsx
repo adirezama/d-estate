@@ -1,4 +1,4 @@
-import { Navigation } from "@components/Navigation";
+import { Navigation } from "@components/Home/Navigation";
 import "@styles/globals.css";
 import type { Metadata } from "next";
 import { Aleo, Manrope, Nunito } from "next/font/google";
