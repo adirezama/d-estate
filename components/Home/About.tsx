@@ -27,7 +27,7 @@ export function About({ classname }: { classname?: string }) {
                   width={400}
                   height={500}
                   sizes="(min-width: 1280px) 464px, 271px"
-                  className="h-[490px] w-[400px]"
+                  className="w-full h-auto"
                 />
               </m.div>
               <m.div
@@ -75,10 +75,8 @@ export function About({ classname }: { classname?: string }) {
                 <Image
                   src={aboutContent.image.hero.src}
                   alt="hero image"
-                  width={0}
-                  height={0}
                   sizes="(min-width: 520px) 448px, calc(94vw - 22px)"
-                  className="w-[28rem] h-[19rem]"
+                  className="w-full h-auto"
                 />
               </m.div>
               <m.p
