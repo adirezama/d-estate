@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Hero classname="py-10" />
-      <About classname="py-10" />
+      <About classname="py-16" />
       <Services classname="py-10 lg:py-16" />
       <HowItWorks classname="py-10 lg:py-32 !pt-32" />
       <Testimonials classname="py-10 lg:py-32 " />

@@ -36,10 +36,10 @@ export function Navigation({}) {
         role="banner"
         className="fixed top-0 w-full z-[5] border-b px-5 md:px-10 bg-white">
         <div className="flex items-center justify-between mx-auto py-3 md:py-5">
-          <Link href={"/"}>
-            <span className="text-2xl leading-none text-primary font-bold font-aleo tracking-[1px]">
-              D&rsquo;estate.
-            </span>
+          <Link
+            href={"/"}
+            className="text-2xl text-primary font-semibold font-manrope">
+            D&rsquo;estate.
           </Link>
           <div className="flex">
             <ul role="list" className="hidden md:flex gap-5 ">

@@ -128,13 +128,13 @@ export function Testimonials({ classname }: { classname?: string }) {
                 className={`${
                   isBeginning == true
                     ? "opacity-30 bg-gray-300 text-gray-600 !cursor-pointer"
-                    : "opactiy-100 bg-white text-primary"
-                } relative top-0 group transition-all duration-300 ease-in-out w-12 h-12 cursor-pointer rounded-full inline-flex justify-center items-center`}>
+                    : "opactiy-100 bg-blueDark text-gray-600 transition-all duration-300 ease-in-out "
+                } relative top-0 group w-12 h-12 cursor-pointer rounded-full inline-flex justify-center items-center`}>
                 <BiChevronLeft
-                  className={`text-3xl text-primary transition-all duration-300 ease-in-out group-hover:text-blueDark ${
+                  className={`text-3xl text-white transition-all duration-300 ease-in-out group-hover:text-gray-600 ${
                     isBeginning == true
                       ? "group-hover:!text-gray-600"
-                      : "group-hover:text-white"
+                      : "group-hover:text-gray-300"
                   }`}
                 />
               </div>
@@ -144,13 +144,13 @@ export function Testimonials({ classname }: { classname?: string }) {
                 className={`${
                   isEnd === true
                     ? "opacity-30 bg-gray-300 text-gray-600 !cursor-pointer"
-                    : "opactiy-100 bg-white text-primary"
-                } relative top-0 group transition-all duration-300 ease-in-out w-12 h-12 cursor-pointer rounded-full inline-flex justify-center items-center`}>
+                    : "opactiy-100 bg-blueDark text-white transition-all duration-300 ease-in-out"
+                } relative top-0 group w-12 h-12 cursor-pointer rounded-full inline-flex justify-center items-center`}>
                 <BiChevronRight
-                  className={`text-3xl text-primary transition-all duration-300 ease-in-out group-hover:text-blueDark ${
+                  className={`text-3xl text-white transition-all duration-300 ease-in-out ${
                     isEnd === true
                       ? "group-hover:!text-gray-600"
-                      : "group-hover:text-white"
+                      : "group-hover:text-gray-300"
                   }`}
                 />
               </div>

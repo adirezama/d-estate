@@ -89,10 +89,10 @@ export function Services({ classname }: { classname?: string }) {
                     <Image
                       src={img.src}
                       alt="hero image"
-                      width={0}
-                      height={0}
+                      width={250}
+                      height={350}
                       sizes="(min-width: 1040px) 240px, (min-width: 780px) 187px, (min-width: 580px) 240px, calc(46.15vw - 18px)"
-                      className="object-cover shadow-2xl w-[15rem] lg:h-[21rem] h-[16rem]"
+                      className="shadow-2xl h-[20rem]"
                     />
                   </m.div>
                 ))}

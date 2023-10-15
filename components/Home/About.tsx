@@ -24,10 +24,10 @@ export function About({ classname }: { classname?: string }) {
                 <Image
                   src={aboutContent.image.hero.src}
                   alt={aboutContent.image.hero.alt}
-                  width={0}
-                  height={0}
+                  width={400}
+                  height={500}
                   sizes="(min-width: 1280px) 464px, 271px"
-                  className="object-cover lg:w-[29rem] lg:h-[30rem] md:w-[20rem] md:h-[21rem]"
+                  className="h-[490px] w-[400px]"
                 />
               </m.div>
               <m.div
@@ -41,8 +41,8 @@ export function About({ classname }: { classname?: string }) {
                 <Image
                   src={aboutContent.image.dots.src}
                   alt={aboutContent.image.dots.alt}
-                  width={0}
-                  height={0}
+                  width={200}
+                  height={200}
                   sizes="33vw"
                   className="absolute bottom-0 -right-10 w-64 md:block hidden"
                 />
@@ -78,7 +78,7 @@ export function About({ classname }: { classname?: string }) {
                   width={0}
                   height={0}
                   sizes="(min-width: 520px) 448px, calc(94vw - 22px)"
-                  className="object-cover w-[28rem] h-[19rem]"
+                  className="w-[28rem] h-[19rem]"
                 />
               </m.div>
               <m.p

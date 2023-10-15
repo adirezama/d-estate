@@ -56,11 +56,11 @@ export function Hero({ classname }: { classname?: string }) {
                 <Image
                   src={`/hero1.png`}
                   alt="hero image"
-                  width={500}
-                  height={250}
+                  width={320}
+                  height={400}
                   priority={true}
                   sizes="(min-width: 1540px) 404px, (min-width: 1280px) 333px, (min-width: 1040px) 262px, (min-width: 780px) 229px, (min-width: 520px) 448px, calc(94vw - 22px)"
-                  className="object-cover shadow-2xl"
+                  className="md:w-[20rem] md:h-[25rem] w-full h-fit"
                 />
               </m.div>
               <m.div
