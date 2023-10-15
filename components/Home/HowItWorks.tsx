@@ -80,7 +80,7 @@ export function HowItWorks({ classname }: { classname?: string }) {
                     transition: { duration: 0.1, ease: "easeInOut" },
                   }}
                   viewport={{ once: true }}
-                  className="group duration-300 pt-32 px-10 pb-20 bg-white relative overflow-hidden hover:bg-blue-300 hover:shadow-2xl">
+                  className="group duration-300 pt-32 px-10 pb-20 bg-white relative overflow-hidden hover:bg-blueDark hover:shadow-2xl">
                   <span className="prevent-select text-[200px] inline-block z-[1] font-semibold absolute -top-[120px] opacity-5 left-0">
                     {step.number}
                   </span>
@@ -113,7 +113,7 @@ export function HowItWorks({ classname }: { classname?: string }) {
           </div>
         </div>
       </section>
-      <section className="pt-72 lg:pt-60 pb-32 bg-blue-300 ">
+      <section className="pt-72 lg:pt-60 pb-32 bg-blueDark ">
         <div className="container px-5 md:px-10 mx-auto">
           <div className="lg:flex justify-center">
             <div className="w-full lg:w-10/12 flex gap-0 items-center">

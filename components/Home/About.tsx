@@ -2,7 +2,7 @@
 import { aboutContent } from "@utils";
 import Image from "next/image";
 import { m, LazyMotion, domAnimation } from "framer-motion";
-import { Button } from "./Button";
+import { Button } from "../Button";
 
 export function About({ classname }: { classname?: string }) {
   return (
@@ -26,7 +26,7 @@ export function About({ classname }: { classname?: string }) {
                   alt={aboutContent.image.hero.alt}
                   width={0}
                   height={0}
-                  sizes="(min-width:1024px) 75vw ,(min-width:768px) 50vw, 33vw"
+                  sizes="(min-width: 1280px) 464px, 271px"
                   className="object-cover lg:w-[29rem] lg:h-[30rem] md:w-[20rem] md:h-[21rem]"
                 />
               </m.div>
@@ -77,7 +77,7 @@ export function About({ classname }: { classname?: string }) {
                   alt="hero image"
                   width={0}
                   height={0}
-                  sizes="(min-width:1024px) 75vw ,(min-width:768px) 50vw, 33vw"
+                  sizes="(min-width: 520px) 448px, calc(94vw - 22px)"
                   className="object-cover w-[28rem] h-[19rem]"
                 />
               </m.div>

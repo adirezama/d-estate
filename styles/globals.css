@@ -18,7 +18,7 @@
 }
 
 .button {
-  @apply py-3 md:px-6 px-3 md:text-base text-sm leading-none bg-primary text-white tracking-[2px] uppercase font-semibold hover:scale-95 transition-transform duration-300 ease-in-out;
+  @apply py-3 md:px-6 px-3 md:text-base text-sm leading-none bg-[#04364A] text-white tracking-[2px] uppercase font-semibold hover:scale-95 transition-transform duration-300 ease-in-out;
 }
 
 .prevent-select {

@@ -20,7 +20,10 @@ export function PostCard({ post, index }: PostCardProps) {
       }}
       viewport={{ once: true }}
       className="bg-white overflow-hidden relative shadow-lg group">
-      <Link href={post.url} className="relative block overflow-hidden">
+      <Link
+        aria-label={`read more about ${post.title}`}
+        href={post.url}
+        className="relative block overflow-hidden">
         <Image
           src={post.image}
           alt=""
@@ -34,10 +37,13 @@ export function PostCard({ post, index }: PostCardProps) {
           {format(parseISO(post.date), "LLL d, yyyy")} &bull; {post.author}
         </p>
         <h3 className="mb-4">
-          <Link href={post.url}>{post.title}</Link>
+          <Link aria-label={`read more about ${post.title}`} href={post.url}>
+            {post.title}
+          </Link>
         </h3>
         <p>
           <Link
+            aria-label={`read more about ${post.title}`}
             href={post.url}
             className="text-xs tracking-[2px] uppercase border-b-2 pb-2 inline-block border-blue-300">
             Read More

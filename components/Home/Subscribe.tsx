@@ -29,7 +29,7 @@ export function Subscribe({ classname }: { classname?: string }) {
                     transition: { duration: 0.3, delay: 0.5 },
                   }}
                   viewport={{ once: true }}
-                  className="text-2xl lg:text-4xl text-white drop-shadow">
+                  className="text-2xl lg:text-4xl text-white">
                   {subscribeContent.heading.title}
                 </m.h2>
               </div>
@@ -52,6 +52,7 @@ export function Subscribe({ classname }: { classname?: string }) {
                 placeholder={subscribeContent.form.placeholder}
               />
               <m.button
+                aria-label="subscribe"
                 whileHover={{ scale: 1.01 }}
                 whileTap={{ scale: 0.95 }}
                 type="submit"

@@ -9,14 +9,14 @@ import { AnimatePresence, m, domAnimation, LazyMotion } from "framer-motion";
 export function Navigation({}) {
   const [active, setActive] = useState(false);
   const sideNav =
-    "md:hidden fixed top-0 right-0 z-10 h-full w-[55%] sm:w-[35%] py-32 flex backdrop-blur bg-blue-300 ";
+    "md:hidden fixed top-0 right-0 z-10 h-full w-[55%] sm:w-[35%] py-32 flex backdrop-blur bg-white";
 
   const pathName = usePathname();
   const currentPath = (href: string) => {
     if (pathName === href) {
-      return "text-[#1B55AF]";
+      return "text-blueDark";
     } else {
-      return "text-white ";
+      return "text-primary ";
     }
   };
 
@@ -34,10 +34,10 @@ export function Navigation({}) {
     <>
       <header
         role="banner"
-        className="fixed top-0 w-full z-[5] border-b border-black px-5 md:px-10 bg-blue-300">
+        className="fixed top-0 w-full z-[5] border-b px-5 md:px-10 bg-white">
         <div className="flex items-center justify-between mx-auto py-3 md:py-5">
           <Link href={"/"}>
-            <span className="prevent-select text-2xl text-white drop-shadow leading-none font-bold font-aleo tracking-[2px]">
+            <span className="text-2xl leading-none text-primary font-bold font-aleo tracking-[1px]">
               D&rsquo;estate.
             </span>
           </Link>
@@ -47,7 +47,7 @@ export function Navigation({}) {
                 <li key={menu.href}>
                   <Link
                     href={menu.href}
-                    className={`relative before:content-[' '] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[2px] before:bg-blue-400 before:origin-[100%,50%] before:transition-all before:duration-300 before:ease-in-out before:scale-x-0 hover:before:origin-[100%, 0%] hover:before:scale-x-[1] text-sm tracking-[2px] uppercase font-nunito font-medium pb-2 ${currentPath(
+                    className={`relative before:content-[' '] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[2px] before:bg-[#3085C3] before:origin-[100%,50%] before:transition-all before:duration-300 before:ease-in-out before:scale-x-0 hover:before:origin-[100%, 0%] hover:before:scale-x-[1] text-sm tracking-[2px] uppercase font-nunito font-medium pb-2 ${currentPath(
                       menu.href
                     )}`}>
                     {menu.label}

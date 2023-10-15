@@ -45,7 +45,7 @@ export function Testimonials({ classname }: { classname?: string }) {
                     y: 0,
                     transition: { delay: 0.05, duration: 0.2 },
                   }}
-                  className="uppercase tracking-[3px] text-base mb-5 inline-block text-white">
+                  className="uppercase tracking-[3px] text-base mb-5 inline-block text-primary">
                   {testimonialsContent.heading.subTitle}
                 </m.span>
                 <m.h2
@@ -55,7 +55,7 @@ export function Testimonials({ classname }: { classname?: string }) {
                     y: 0,
                     transition: { delay: 0.1, duration: 0.2 },
                   }}
-                  className="text-2xl lg:text-4xl text-white drop-shadow">
+                  className="text-2xl lg:text-4xl text-primary">
                   {testimonialsContent.heading.title}
                 </m.h2>
               </div>
@@ -80,22 +80,22 @@ export function Testimonials({ classname }: { classname?: string }) {
                 {testimonialsContent.testimonials.map((testimonial) => (
                   <SwiperSlide
                     key={testimonial.name}
-                    className="w-full prevent-select">
-                    <div className="block md:flex mt-10 items-stretch bg-white rounded-2xl shadow-inner overflow-hidden">
+                    className="w-full prevent-select border rounded-2xl overflow-hidden">
+                    <div className="block md:flex items-stretch bg-white shadow-xl">
                       <div className="md:w-1/3 aspect-square">
                         <Image
                           src={testimonial.img}
                           alt={testimonial.name}
-                          width={0}
-                          height={0}
-                          sizes="33vw"
+                          width={400}
+                          height={400}
+                          sizes="(min-width: 1540px) 404px, (min-width: 1280px) 333px, (min-width: 1060px) 262px, (min-width: 780px) 229px, (min-width: 680px) 600px, calc(94.44vw - 23px)"
                           className="object-cover object-center !h-full !w-full"
                         />
                       </div>
                       <div className="md:w-2/3 p-7 md:p-16 flex items-center">
                         <div>
                           <blockquote className="text-lg mb-7">
-                            <span className="text-[200px] relative block text-primary">
+                            <span className="text-[200px] relative block text-gray-300">
                               &ldquo;
                             </span>
                             {testimonial.quote}
@@ -128,10 +128,10 @@ export function Testimonials({ classname }: { classname?: string }) {
                 className={`${
                   isBeginning == true
                     ? "opacity-30 bg-gray-300 text-gray-600 !cursor-pointer"
-                    : "opactiy-100 bg-blue-200 text-white"
+                    : "opactiy-100 bg-white text-primary"
                 } relative top-0 group transition-all duration-300 ease-in-out w-12 h-12 cursor-pointer rounded-full inline-flex justify-center items-center`}>
                 <BiChevronLeft
-                  className={`text-3xl text-primary transition-all duration-300 ease-in-out group-hover:text-white ${
+                  className={`text-3xl text-primary transition-all duration-300 ease-in-out group-hover:text-blueDark ${
                     isBeginning == true
                       ? "group-hover:!text-gray-600"
                       : "group-hover:text-white"
@@ -144,10 +144,10 @@ export function Testimonials({ classname }: { classname?: string }) {
                 className={`${
                   isEnd === true
                     ? "opacity-30 bg-gray-300 text-gray-600 !cursor-pointer"
-                    : "opactiy-100 bg-blue-200 text-white"
+                    : "opactiy-100 bg-white text-primary"
                 } relative top-0 group transition-all duration-300 ease-in-out w-12 h-12 cursor-pointer rounded-full inline-flex justify-center items-center`}>
                 <BiChevronRight
-                  className={`text-3xl text-primary transition-all duration-300 ease-in-out group-hover:text-white ${
+                  className={`text-3xl text-primary transition-all duration-300 ease-in-out group-hover:text-blueDark ${
                     isEnd === true
                       ? "group-hover:!text-gray-600"
                       : "group-hover:text-white"

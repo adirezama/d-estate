@@ -11,7 +11,7 @@ export function Hero({ classname }: { classname?: string }) {
   return (
     <section className={classname} ref={ref}>
       <div className="container mx-auto px-5 md:px-10">
-        <div className="flex flex-col md:flex-row items-center md:justify-between gap-10 w-full lg:w-10/12 mx-auto md:min-h-[500px] lg:min-h-[600px]">
+        <div className="flex flex-col md:flex-row items-center md:justify-between gap-10 w-full lg:w-10/12 mx-auto md:min-h-[500px] ">
           {/* Content */}
           <div className="md:w-4/12 z-[3] space-y-6">
             <LazyMotion features={domAnimation}>
@@ -21,9 +21,9 @@ export function Hero({ classname }: { classname?: string }) {
                   whileInView={{
                     opacity: 1,
                     y: 0,
-                    transition: { delay: 0.05, duration: 0.1 },
+                    transition: { delay: 0.05, duration: 0.5 },
                   }}
-                  className="text-white drop-shadow prevent-select md:w-[34rem] lg:w-[48rem] lg:text-7xl text-4xl md:inline-block font-semibold font-manrope">
+                  className="text-primary prevent-select md:w-[34rem] lg:w-[48rem] lg:text-7xl text-4xl md:inline-block font-semibold font-manrope">
                   {heroContent.intro.title}
                 </m.h1>
               )}
@@ -35,7 +35,7 @@ export function Hero({ classname }: { classname?: string }) {
                     y: 0,
                     transition: { delay: 0.1, duration: 0.1 },
                   }}
-                  className="md:w-[28rem] text-sm md:text-base leading-relaxed inline-block text-white drop-shadow-sm">
+                  className="md:w-[28rem] text-sm md:text-base leading-relaxed inline-block text-primary">
                   {heroContent.intro.description}
                 </m.p>
               )}
@@ -56,11 +56,11 @@ export function Hero({ classname }: { classname?: string }) {
                 <Image
                   src={`/hero1.png`}
                   alt="hero image"
-                  width={0}
-                  height={0}
+                  width={500}
+                  height={250}
                   priority={true}
-                  sizes="(min-width:1024px) 50vw ,(min-width-width:768px) 100vw, 33vw"
-                  className="object-cover shadow-2xl lg:w-[29rem] lg:h-[30rem] md:w-[20rem] md:h-[21rem] w-[28rem] h-[19rem]"
+                  sizes="(min-width: 1540px) 404px, (min-width: 1280px) 333px, (min-width: 1040px) 262px, (min-width: 780px) 229px, (min-width: 520px) 448px, calc(94vw - 22px)"
+                  className="object-cover shadow-2xl"
                 />
               </m.div>
               <m.div
@@ -74,8 +74,8 @@ export function Hero({ classname }: { classname?: string }) {
                 <Image
                   src="/dots-black.svg"
                   alt="Dots background image"
-                  width={0}
-                  height={0}
+                  width={200}
+                  height={200}
                   sizes="33vw"
                   className="absolute bottom-0 -left-[100px] w-64 md:block hidden"
                 />

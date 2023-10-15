@@ -23,7 +23,7 @@ export function Services({ classname }: { classname?: string }) {
                       x: 0,
                       transition: { delay: 0.1 * index, duration: 0.2 },
                     }}
-                    className="prevent-select text-3xl font-semibold font-manrope text-white drop-shadow tracking-[1.5px]">
+                    className="prevent-select text-3xl font-semibold font-manrope text-primary tracking-[1.5px]">
                     {offer.title}
                   </m.h1>
                   <m.p
@@ -37,7 +37,7 @@ export function Services({ classname }: { classname?: string }) {
                         staggerDirection: -1,
                       },
                     }}
-                    className=" leading-relaxed text-white drop-shadow-sm">
+                    className=" leading-relaxed text-primary">
                     {offer.description}
                   </m.p>
                 </div>
@@ -52,7 +52,7 @@ export function Services({ classname }: { classname?: string }) {
                   x: 0,
                   transition: { delay: 0.05, duration: 0.2 },
                 }}
-                className="prevent-select text-white drop-shadow md:text-[2.625rem] text-4xl leading-tight font-semibold">
+                className="prevent-select text-primary md:text-[2.625rem] text-4xl leading-tight font-semibold">
                 {servicesContent.headline.title}
               </m.h2>
               <m.p
@@ -62,7 +62,7 @@ export function Services({ classname }: { classname?: string }) {
                   x: 0,
                   transition: { delay: 0.15, duration: 0.2 },
                 }}
-                className="text-white drop-shadow-sm text-base">
+                className="text-primary text-base">
                 {servicesContent.headline.description}
               </m.p>
               <m.div
@@ -91,7 +91,7 @@ export function Services({ classname }: { classname?: string }) {
                       alt="hero image"
                       width={0}
                       height={0}
-                      sizes="(min-width:1024px) 75vw ,(min-width-width:768px) 50vw, 33vw"
+                      sizes="(min-width: 1040px) 240px, (min-width: 780px) 187px, (min-width: 580px) 240px, calc(46.15vw - 18px)"
                       className="object-cover shadow-2xl w-[15rem] lg:h-[21rem] h-[16rem]"
                     />
                   </m.div>

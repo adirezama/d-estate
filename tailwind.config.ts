@@ -16,6 +16,8 @@ const config: Config = {
       colors: {
         primary: "#292A2E",
         background: "#F4F9FC",
+        blueDark: "#3085C3",
+        blueLight: "#5CD2E6",
       },
       boxShadow: {
         buton: "0px 6px 0px 0px #000",

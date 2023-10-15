@@ -305,3 +305,10 @@ export const footerContent = {
     },
   ],
 };
+
+export const aboutHeroContent = {
+  heading: {
+    title: "Blueprinting Tomorrow's Landscape Today",
+    subTitle: "About Us",
+  },
+};
