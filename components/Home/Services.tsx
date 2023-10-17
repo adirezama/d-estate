@@ -91,7 +91,7 @@ export function Services({ classname }: { classname?: string }) {
                       alt="hero image"
                       width={250}
                       height={350}
-                      sizes="(min-width: 1040px) 240px, (min-width: 780px) 187px, (min-width: 580px) 240px, calc(46.15vw - 18px)"
+                      sizes="(min-width: 480px) 400px, 87.5vw"
                       className="shadow-2xl h-[20rem]"
                     />
                   </m.div>

@@ -10,7 +10,7 @@ export function Footer({ classname }: { classname?: string }) {
           {/* Logo */}
           <div className="md:w-4/12 mb-10 md:mb-0">
             <Link href={"/"}>
-              <span className="prevent-select text-2xl text-primary drop-shadow leading-none font-bold font-aleo tracking-[2px]">
+              <span className="prevent-select text-2xl text-primary leading-none font-semibold font-aleo tracking-[2px]">
                 D&rsquo;estate.
               </span>
             </Link>

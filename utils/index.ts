@@ -1,4 +1,3 @@
-import { HowItWorks } from "@components/Home/HowItWorks";
 import {
   BiHardHat,
   BiPaintRoll,
@@ -6,7 +5,17 @@ import {
   BiBulb,
   BiLayer,
   BiOutline,
+  BiArch,
+  BiSolidUser,
 } from "react-icons/bi";
+import img1 from "/public/images/img-square-1-min.jpg";
+import img2 from "/public/images/img-square-2-min.jpg";
+import img3 from "/public/images/img-square-3-min.jpg";
+import img4 from "/public/images/img-square-4-min.jpg";
+import img5 from "/public/images/img-square-5-min.jpg";
+import post1 from "/public/images/post-1-min.jpg";
+import post2 from "/public/images/post-2-min.jpg";
+import post3 from "/public/images/post-3-min.jpg";
 export const navMenu = [
   { href: "/", label: "Home" },
   { href: "/projects", label: "Projects" },
@@ -311,4 +320,155 @@ export const aboutHeroContent = {
     title: "Blueprinting Tomorrow's Landscape Today",
     subTitle: "About Us",
   },
+};
+
+export const storyContent = {
+  column1: {
+    imgs: [
+      {
+        img: img5,
+        alt: "Team Brainstorming",
+        width: 1180,
+        height: 413,
+        tailwindClass: "h-56 lg:h-96",
+      },
+      { img: img1, alt: "Woman makin a plan", width: 1180, height: 413 },
+    ],
+  },
+  column2: {
+    imgs: [
+      {
+        img: img2,
+        alt: "Team Meeting",
+        width: 1180,
+        height1: 413,
+        tailwindClass: "h-56 lg:h-64",
+      },
+      {
+        img: post2,
+        alt: "White curvy building",
+        width: 1180,
+        height: 413,
+        tailwindClass: "h-56 lg:h-64",
+      },
+      {
+        img: img4,
+        alt: "Woman makin a plan",
+        width: 1180,
+        height: 413,
+        tailwindClass: "h-56 lg:h-96",
+      },
+    ],
+  },
+  column3: {
+    imgs: [
+      {
+        img: post1,
+        alt: "Building",
+        width: 1180,
+        height1: 413,
+      },
+      {
+        img: img3,
+        alt: "Man writing a plan",
+        width: 1180,
+        height: 413,
+      },
+    ],
+  },
+  storyText: {
+    heading: "Crafting Spaces, Shaping Dreams",
+    p1: "Envisioned by a group of passionate architechs, D-Estate is a leading real estate company that has been crafting spaces for over 20 years. We are committed to delivering excellence in architectural design and construction.",
+    p2: "Our journey began in 1999, when we built our first home. Since then, we have grown into a full-service real estate company, with a team of over 100 professionals. We have built over 1000 homes, and have won numerous awards for our work.",
+    signature: "/Bill_Smith_Signature.svg",
+    name: "Bill Smith",
+    roleTitle: "CEO and Co-Founder",
+  },
+};
+
+export const whyUsContent = {
+  heading: {
+    title: "Blueprinting Tomorrow's Landscape Today",
+    subTitle: "Why Us",
+  },
+  whyUsItems: [
+    {
+      icon: BiHardHat,
+      title: "Unparalled Expertise",
+      description:
+        "with over 20 years of experience, we have the expertise to deliver the best results.",
+    },
+    {
+      icon: BiArch,
+      title: "Innovative Design",
+      description:
+        "Our Portfolio is a testament to our commitment to design excellence.",
+    },
+    {
+      icon: BiSolidUser,
+      title: "Client-centered Approach",
+      description:
+        "We are committed to delivering the highest level of customer satisfaction.",
+    },
+  ],
+};
+
+export const teamContent = {
+  heading: {
+    title: "Introducing Our Exceptional Team",
+    subTitle: "Meet our Team",
+    description:
+      "D-estate we're dedicated to shaping environments that trancend mere structuring, weaving in the essence of life and living. ",
+  },
+  team: [
+    {
+      image: "/testi-8.jpg",
+      name: "Jane Cooper",
+      role: "Principal Architect",
+      twitter: "https://twitter.com/",
+      linkedin: "https://www.linkedin.com/",
+    },
+    {
+      image: "/testi-1.jpg",
+      name: "Alexa Richardson",
+      role: "Design Architect",
+      twitter: "https://twitter.com/",
+      linkedin: "https://www.linkedin.com/",
+    },
+    {
+      image: "/testi-2.jpg",
+      name: "James Mayer",
+      role: "Landscape Architect",
+      twitter: "https://twitter.com/",
+      linkedin: "https://www.linkedin.com/",
+    },
+    {
+      image: "/testi-3.jpg",
+      name: "Rober Fox",
+      role: "Landscape Architect",
+      twitter: "https://twitter.com/",
+      linkedin: "https://www.linkedin.com/",
+    },
+    {
+      image: "/testi-4.jpg",
+      name: "Sarah Smith",
+      role: "Landscape Architect",
+      twitter: "https://twitter.com/",
+      linkedin: "https://www.linkedin.com/",
+    },
+    {
+      image: "/testi-5.jpg",
+      name: "William Jones",
+      role: "Lead Architect",
+      twitter: "https://twitter.com/",
+      linkedin: "https://www.linkedin.com/",
+    },
+    {
+      image: "/testi-6.jpg",
+      name: "William Jones",
+      role: "Construction Manager",
+      twitter: "https://twitter.com/",
+      linkedin: "https://www.linkedin.com/",
+    },
+  ],
 };

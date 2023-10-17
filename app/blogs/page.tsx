@@ -1,13 +1,16 @@
-import { Motion } from "@components/Motion";
-import { button } from "@utils/Anim";
-import { motion } from "framer-motion";
-import Image from "next/image";
-export default function Blogs({}) {
+import { Post } from "@components/Blogs/Post";
+import { Subscribe } from "@components/shared/Subscribe";
+import { Hero } from "@components/shared/Hero";
+export default function Blogs({ params }: any) {
   return (
-    <div className="p-20 ">
-      <div className="flex gap-5">
-        <Motion />
-      </div>
-    </div>
+    <>
+      <Hero
+        classname="pt-52 pb-24"
+        title="Recent Updates"
+        subTitle="Our Blog"
+      />
+      <Post classname="pb-52" itemsPerPage={6} params={params} />
+      <Subscribe classname="py-16 lg:py-20 bg-blueDark" />
+    </>
   );
 }

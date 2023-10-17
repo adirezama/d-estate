@@ -10,13 +10,12 @@ export function Motion({}) {
     <LazyMotion features={domAnimation}>
       <Motion
         variants={button}
-        initial={false}
         whileHover={"whileHover"}
         animate="animate"
         whileTap="whileTap"
         classname="py-4 px-12 text-xl leading-6 font-medium bg-[#fcdf51] border-2 border-solid border-black rounded-lg"
         label="Get Started"
-        href="/"
+        href="#"
       />
     </LazyMotion>
   );

@@ -56,7 +56,7 @@ export function Subscribe({ classname }: { classname?: string }) {
                 whileHover={{ scale: 1.01 }}
                 whileTap={{ scale: 0.95 }}
                 type="submit"
-                className="appearance-none absolute top-1 right-1 bg-blue-300 text-white shadow-md w-12 h-12 rounded-full flex items-center justify-center">
+                className="appearance-none absolute top-1 right-1 bg-blueDark text-white shadow-md w-12 h-12 rounded-full flex items-center justify-center">
                 <BiSolidPaperPlane />
               </m.button>
             </m.form>

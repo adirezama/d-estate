@@ -6,7 +6,7 @@ import {
 
 export const Post = defineDocumentType(() => ({
   name: "Post",
-  filePathPattern: "/blog/*.mdx",
+  filePathPattern: "/blogs/*.mdx",
   contentType: "mdx",
   fields: {
     title: {

@@ -43,7 +43,7 @@ export function PostCard({ post, index }: PostCardProps) {
         </h3>
         <p>
           <Link
-            aria-label={`read more about ${post.title}`}
+            aria-label={`${post.title}`}
             href={post.url}
             className="text-xs tracking-[2px] uppercase border-b-2 pb-2 inline-block border-blue-300">
             Read More

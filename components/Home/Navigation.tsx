@@ -75,7 +75,6 @@ export function Navigation({}) {
           />
         )}
         {/* Mobile Menu */}
-
         <LazyMotion features={domAnimation} strict>
           <AnimatePresence mode="wait">
             {active && (

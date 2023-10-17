@@ -82,13 +82,13 @@ export function Testimonials({ classname }: { classname?: string }) {
                     key={testimonial.name}
                     className="w-full prevent-select border rounded-2xl overflow-hidden">
                     <div className="block md:flex items-stretch bg-white shadow-xl">
-                      <div className="md:w-1/3 aspect-square">
+                      <div className="md:w-1/3 aspect-square items-stretch">
                         <Image
                           src={testimonial.img}
                           alt={testimonial.name}
                           width={400}
                           height={400}
-                          sizes="(min-width: 1540px) 404px, (min-width: 1280px) 333px, (min-width: 1060px) 262px, (min-width: 780px) 229px, (min-width: 680px) 600px, calc(94.44vw - 23px)"
+                          sizes="(min-width: 1540px) 404px, (min-width: 1280px) 333px, (min-width: 1040px) 262px, (min-width: 780px) 229px, (min-width: 680px) 598px, calc(94.44vw - 25px)"
                           className="object-cover object-center !h-full !w-full"
                         />
                       </div>
@@ -127,14 +127,14 @@ export function Testimonials({ classname }: { classname?: string }) {
                 onClick={prevHandle}
                 className={`${
                   isBeginning == true
-                    ? "opacity-30 bg-gray-300 text-gray-600 !cursor-pointer"
+                    ? "opacity-60 bg-gray-300 text-gray-600 !cursor-pointer"
                     : "opactiy-100 bg-blueDark text-gray-600 transition-all duration-300 ease-in-out "
-                } relative top-0 group w-12 h-12 cursor-pointer rounded-full inline-flex justify-center items-center`}>
+                } relative top-0 group w-12 h-12 cursor-pointer rounded-full inline-flex justify-center items-center border`}>
                 <BiChevronLeft
-                  className={`text-3xl text-white transition-all duration-300 ease-in-out group-hover:text-gray-600 ${
+                  className={`text-3xl text-white transition-all duration-300 ease-in-out  ${
                     isBeginning == true
-                      ? "group-hover:!text-gray-600"
-                      : "group-hover:text-gray-300"
+                      ? "group-hover:!text-gray-600 "
+                      : "group-hover:text-black group-hover:opacity-60"
                   }`}
                 />
               </div>
@@ -147,10 +147,10 @@ export function Testimonials({ classname }: { classname?: string }) {
                     : "opactiy-100 bg-blueDark text-white transition-all duration-300 ease-in-out"
                 } relative top-0 group w-12 h-12 cursor-pointer rounded-full inline-flex justify-center items-center`}>
                 <BiChevronRight
-                  className={`text-3xl text-white transition-all duration-300 ease-in-out ${
-                    isEnd === true
-                      ? "group-hover:!text-gray-600"
-                      : "group-hover:text-gray-300"
+                  className={`text-3xl text-white transition-all duration-300 ease-in-out  ${
+                    isBeginning == true
+                      ? "group-hover:!text-gray-600 "
+                      : "group-hover:text-black group-hover:opacity-60"
                   }`}
                 />
               </div>

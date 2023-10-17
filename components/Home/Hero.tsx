@@ -21,7 +21,7 @@ export function Hero({ classname }: { classname?: string }) {
                   whileInView={{
                     opacity: 1,
                     y: 0,
-                    transition: { delay: 0.05, duration: 0.5 },
+                    transition: { delay: 0.2, duration: 0.5 },
                   }}
                   className="text-primary prevent-select md:w-[34rem] lg:w-[48rem] lg:text-7xl text-4xl md:inline-block font-semibold font-manrope">
                   {heroContent.intro.title}
@@ -33,7 +33,7 @@ export function Hero({ classname }: { classname?: string }) {
                   whileInView={{
                     opacity: 1,
                     y: 0,
-                    transition: { delay: 0.1, duration: 0.1 },
+                    transition: { delay: 0.2, duration: 0.3 },
                   }}
                   className="md:w-[28rem] text-sm md:text-base leading-relaxed inline-block text-primary">
                   {heroContent.intro.description}
@@ -45,22 +45,22 @@ export function Hero({ classname }: { classname?: string }) {
           <div className="md:w-4/12 md:py-20 relative">
             <LazyMotion features={domAnimation}>
               <m.div
-                initial={{ opacity: 0, x: 20 }}
+                initial={{ opacity: 0, x: 10 }}
                 whileInView={{
                   opacity: 1,
                   x: 0,
-                  transition: { delay: 0.3, duration: 0.3 },
+                  transition: { duration: 0.5, delay: 0.2 },
                 }}
                 viewport={{ once: true }}
-                className="z-[2] relative bg-cover bg-center">
+                className="z-[2] relative">
                 <Image
                   src={`/hero1.png`}
                   alt="hero image"
                   width={320}
                   height={400}
                   priority={true}
-                  sizes="(min-width: 1540px) 404px, (min-width: 1280px) 333px, (min-width: 1040px) 262px, (min-width: 780px) 229px, (min-width: 520px) 448px, calc(94vw - 22px)"
-                  className="w-full h-auto"
+                  className="h-[420px] md:h-auto"
+                  sizes="(min-width: 1280px) 320px, (min-width: 1040px) 262px, (min-width: 780px) 229px, (min-width: 400px) 320px, calc(75vw + 35px)"
                 />
               </m.div>
               <m.div
@@ -74,8 +74,8 @@ export function Hero({ classname }: { classname?: string }) {
                 <Image
                   src="/dots-black.svg"
                   alt="Dots background image"
-                  width={200}
-                  height={200}
+                  width={100}
+                  height={100}
                   sizes="33vw"
                   className="absolute bottom-0 -left-[100px] w-64 md:block hidden"
                 />

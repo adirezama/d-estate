@@ -20,10 +20,12 @@ const config: Config = {
         blueLight: "#5CD2E6",
       },
       boxShadow: {
-        buton: "0px 6px 0px 0px #000",
+        button: "0px 6px 0px 0px #000",
+        buttonActive: "0px 1px 0px 0px #000",
+        buttonHover: "0px 7px 0px 0px #000",
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
 export default config;
