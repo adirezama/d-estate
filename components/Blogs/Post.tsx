@@ -70,14 +70,14 @@ export function Post({
         <div className="lg:w-10/12 mx-auto mb-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <Items currentItems={currItems} />
         </div>
-        <div className="lg:w-10/12 mx-auto flex flex-wrap">
+        {/* <div className="lg:w-10/12 mx-auto flex flex-wrap">
           <ReactPaginate
-            nextLabel="Next"
+            nextLabel="next"
+            previousLabel="previous"
             onPageChange={handlePageClick}
             pageRangeDisplayed={3}
             marginPagesDisplayed={2}
             pageCount={pageCount}
-            previousLabel="Previous"
             pageClassName="page-link"
             previousClassName="page-item"
             previousLinkClassName="page-item"
@@ -90,7 +90,7 @@ export function Post({
             activeClassName="active"
             renderOnZeroPageCount={null}
           />
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -71,7 +71,7 @@ export function BlogContent({ blog }: { blog: Post | undefined }) {
 
                 <div className="border-l border-gray-200 relative pl-3 before:content-[''] before:top-0 before:-left-[1px] before:absolute before:h-7 before:w-[1px] before:bg-blueDark">
                   <span className="block text-gray-400">Date</span>
-                  <span>{blog.date}</span>
+                  <span>{format(parseISO(blog.date), "LLL d, yyyy")}</span>
                 </div>
               </div>
             </div>

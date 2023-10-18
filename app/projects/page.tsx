@@ -6,7 +6,7 @@ export default function Projects({}) {
   return (
     <>
       <Hero classname="pt-52 pb-24" title="Projects" subTitle="Our Projects" />
-      <Project classname="pt-0 pb-52" itemsPerPage={4} />
+      <Project classname="pt-0 pb-52" itemsPerPage={6} />
       <CTA
         classname="py-20 bg-blueDark"
         cta_label="Get in touch"

@@ -4,13 +4,8 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 });
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    serverActions: true,
-    optimizePackageImports: ["m", "LazyMotion", "domAnimation", "Swiper"],
-  },
-  compress: true,
-  reactStrictMode: true,
-  swcMinify: true,
+  // compress: true,
+  // swcMinify: true,
 };
 
 module.exports = withBundleAnalyzer(withContentlayer(nextConfig));

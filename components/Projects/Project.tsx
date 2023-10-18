@@ -71,18 +71,18 @@ export default function Project({
     }
   }, [itemOffset, itemsPerPage, clickPaginate, items]);
 
-  const handlePageClick = (e: any) => {
-    const newOffset = (e.selected * itemsPerPage) % items.length;
-    setClickPaginate(true);
-    setItemOffset(newOffset);
-  };
+  // const handlePageClick = (e: any) => {
+  //   const newOffset = (e.selected * itemsPerPage) % items.length;
+  //   setClickPaginate(true);
+  //   setItemOffset(newOffset);
+  // };
   if (!items) return null;
   return (
     <section className={classname} ref={ref}>
       <div className="lg:w-10/12 mx-auto flex flex-wrap mb-10">
         <Items currentItems={currItems} />
       </div>
-      <div className="lg:w-10/12 mx-auto flex flex-wrap">
+      {/* <div className="lg:w-10/12 mx-auto flex flex-wrap">
         <ReactPaginate
           nextLabel="Next"
           onPageChange={handlePageClick}
@@ -102,7 +102,7 @@ export default function Project({
           activeClassName="active"
           renderOnZeroPageCount={null}
         />
-      </div>
+      </div> */}
     </section>
   );
 }
