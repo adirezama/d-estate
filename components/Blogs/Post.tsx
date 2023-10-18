@@ -56,15 +56,7 @@ export function Post({
     if (clickPaginate === true) {
       ref.current?.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-  }, [
-    setCurrItems,
-    setPageCount,
-    setClickPaginate,
-    itemOffset,
-    items,
-    itemsPerPage,
-    clickPaginate,
-  ]);
+  }, [itemOffset, items, itemsPerPage, clickPaginate]);
 
   const handlePageClick = (e: any) => {
     const newOffset = (e.selected * itemsPerPage) % items.length;

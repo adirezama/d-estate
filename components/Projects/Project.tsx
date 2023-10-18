@@ -69,15 +69,7 @@ export default function Project({
     if (clickPaginate === true) {
       ref.current?.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-  }, [
-    setCurrItems,
-    setPageCount,
-    setClickPaginate,
-    itemOffset,
-    itemsPerPage,
-    clickPaginate,
-    items,
-  ]);
+  }, [itemOffset, itemsPerPage, clickPaginate, items]);
 
   const handlePageClick = (e: any) => {
     const newOffset = (e.selected * itemsPerPage) % items.length;
