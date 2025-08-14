@@ -3,7 +3,8 @@
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Post, allPosts } from "@.contentlayer/generated";
+import type { Post } from "@.contentlayer/generated";
+import { allPosts } from "@.contentlayer/generated";
 import ReactPaginate from "react-paginate";
 import { compareDesc } from "date-fns";
 import { Items } from "./Items";

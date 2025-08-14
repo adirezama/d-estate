@@ -3,7 +3,8 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Project, allProjects } from "@.contentlayer/generated";
+import type { Project } from "@.contentlayer/generated";
+import { allProjects } from "@.contentlayer/generated";
 import { compareDesc } from "date-fns";
 import ReactPaginate from "react-paginate";
 import { m, LazyMotion, domAnimation } from "framer-motion";
